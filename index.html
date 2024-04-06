@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>YIP-YIP</h1>
+    <div class="foto">
+      <h2 id="gambar">yip-yip bobok</h2>
+      <picture>
+        <source media="(max-width: 600px)" srcset="kucing2.jpg" />
+        <source media="(max-width: 1200px)" srcset="kucing1.jpg" />
+        <img src="kucing1.jpg" alt="pic 1" />
+      </picture>
+    </div>
+
+    <div class="vidio">
+      <h2 id="video">yip-yip the movie</h2>
+      <video
+        controls
+        width="300"
+        height="500"
+        loop
+        autoplay
+        muted
+        preload="auto"
+      >
+        <source src="kucing.mp4" type="video/mp4" />
+        <track kind="captions" src="kucing.mp4" srclang="en" label="English" />
+      </video>
+    </div>
+
+    <div class="suara">
+      <h2 id="audio">Jedag-Jedug</h2>
+      <audio controls>
+        <source src="lagu.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

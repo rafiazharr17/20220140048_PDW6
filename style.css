@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  background: beige;
+  color: black;
+  border-radius: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-family: "Brush Script MT", cursive;
+}
+
+.foto {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.foto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vidio {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.vidio video {
+  border-radius: 20px;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suara {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.suara audio {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #4cb4f0, #b0daec);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.suara audio:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.suara audio::-webkit-media-controls-panel {
+  background-color: transparent;
+}
+
+.suara audio::-webkit-media-controls-play-button {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.suara audio::-webkit-media-controls-play-button:hover {
+  background-color: #ecd4b0;
+}
